@@ -21,32 +21,32 @@
 #define BOTONRESTA 4
 
 
-int timedisplayon = 10;
-int apagado = 0;
-int contador = 0;
+int timedisplayon = 10; // Duración del encendido de las pantallas
+int apagado = 0; // Valor utilizado para apagar ambas pantallas
+int contador = 0; // Variable para llevar la cuenta
 
-int lectura_boton_suma = 0;
-int lectura_boton_resta = 0;
-int lectura_boton_reset = 0;
+int lectura_boton_suma = 0; // Variable para almacenar la lectura del botón de suma
+int lectura_boton_resta = 0; // Variable para almacenar la lectura del botón de resta
+int lectura_boton_reset = 0; // Variable para almacenar la lectura del botón de reset
 
 
 
-int suma = 1;
-int sumaPrevia = 1;
-int resta = 1;
-int restaPrevia = 1;
-int reset = 1;
-int resetPrevio = 1;
+int suma = 1; // Valor para la operación de suma
+int sumaPrevia = 1; // Valor previo del botón de suma
+int resta = 1; // Valor para la operación de resta
+int restaPrevia = 1; // Valor previo del botón de resta
+int reset = 1; // Valor para la operación de reset
+int resetPrevio = 1; // Valor previo del botón de reset
 
 
 void setup()
 {
-  //Botones (SUMA, RESET, RESTA)
+  // Configuración de los botones (SUMA, RESET, RESTA) como entrada con resistencia pull-up
   pinMode(BOTONRESTA, INPUT_PULLUP);
   pinMode(BOTONRESET, INPUT_PULLUP);
   pinMode(BOTONSUMA, INPUT_PULLUP);
   
-  //LEDS
+  // Configuración de los pines de los LEDs como salida
   pinMode(5, OUTPUT);
   pinMode(6, OUTPUT);
   pinMode(7, OUTPUT);
@@ -56,10 +56,11 @@ void setup()
   pinMode(11, OUTPUT);
   
   
-  //PANTALLAS
+  // Configuración de los pines de las pantallas como salida
   pinMode(UNIDAD, OUTPUT);
   pinMode(DECENA, OUTPUT);
   
+  // Inicialización de la comunicación serial
   Serial.begin(9600);
     
   
@@ -96,7 +97,7 @@ void loop()
 
 //Mostrar numero
 
-
+// Función para mostrar un dígito en los LEDs
 void printDigit(int digit){
   
   /*
@@ -242,8 +243,7 @@ void printDigit(int digit){
 }
 
 
-//Funcion de encendido de pantallas
-
+// Función para encender una de las pantallas y apagar la otra
 void prendePantalla(int digito)
 {
   
@@ -273,8 +273,7 @@ void prendePantalla(int digito)
 
 }
 
-//Funcion para detectar el encendido de pantallas
-
+// Función para mostrar el contador en las pantallas
 void printContador(int contador){
   
   prendePantalla(apagado);
@@ -286,8 +285,7 @@ void printContador(int contador){
 
 }
 
-//Funcion del estado del boton
-
+// Función para detectar el estado de los botones
 int botonPresionado(void)
 {
   

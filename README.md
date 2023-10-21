@@ -33,6 +33,9 @@ FUNCIONES:
 MULTIPLEXACION:
 la implementación de la multiplexación en este código se logra alternando rápidamente entre dos pantallas de un display de siete segmentos (unidad y decena) utilizando dos pines de control (UNIDAD y DECENA). Esto permite mostrar números de dos dígitos en la pantalla con solo dos pines de control en lugar de requerir un pin para cada segmento del display.
 
+Se agrego al proyecto un tercer display para mostrar numeros primos, ademas de 2 interruptores deslizantes y un sensor de temperatura.
+En la tercera parte del ejercicio se agrego un led junto con una fotorresistencia, el led enciende cuando la fotorresistencia se pone en > 300 o < 600
+
 LINK AL PROYECTO:
 https://www.tinkercad.com/things/2crX9IE3Eb5-copy-of-intento-4/editel
 

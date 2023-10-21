@@ -34,8 +34,7 @@ MULTIPLEXACION:
 la implementación de la multiplexación en este código se logra alternando rápidamente entre dos pantallas de un display de siete segmentos (unidad y decena) utilizando dos pines de control (UNIDAD y DECENA). Esto permite mostrar números de dos dígitos en la pantalla con solo dos pines de control en lugar de requerir un pin para cada segmento del display.
 
 LINK AL PROYECTO:
-https://www.tinkercad.com/things/lBd2BjuMMDX
-
+https://www.tinkercad.com/things/2crX9IE3Eb5-copy-of-intento-4/editel
 
 
 

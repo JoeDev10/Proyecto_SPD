@@ -3,7 +3,7 @@ Integrantes:
 -Fernando Torres
 -Joel Rodriguez
 
-![proyectospd](https://github.com/JoeDev10/Proyecto_SPD/assets/118489703/caea1ce4-316c-4b65-8ae8-42b00613b4c3)
+![proyecto_spd_final](https://github.com/JoeDev10/Proyecto_SPD/assets/118489703/33771a4b-6250-4f6f-bb1a-e429ce1ff2bb)
 
 DESCRIPCION:
 
